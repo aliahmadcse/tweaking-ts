@@ -1,6 +1,6 @@
 # Tweaking TypeScript
 
-This repo holds my little brittle project I made during learning
+This repo holds my little brittle projects I made during learning
 typescript.
 
 ## Setup
