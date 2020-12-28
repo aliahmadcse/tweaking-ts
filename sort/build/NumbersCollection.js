@@ -12,6 +12,12 @@ var NumbersCollection = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
+    /**
+     * @Return true if left element is greater than right one, else
+     * false
+     * @param leftIndex
+     * @param rightIndex
+     */
     NumbersCollection.prototype.compare = function (leftIndex, rightIndex) {
         return this.data[leftIndex] > this.data[rightIndex];
     };

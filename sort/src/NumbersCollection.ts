@@ -5,6 +5,12 @@ export class NumbersCollection {
         return this.data.length;
     }
 
+    /**
+     * @Return true if left element is greater than right one, else
+     * false
+     * @param leftIndex
+     * @param rightIndex
+     */
     public compare(leftIndex: number, rightIndex: number): boolean {
         return this.data[leftIndex] > this.data[rightIndex];
     }
