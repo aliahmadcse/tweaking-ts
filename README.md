@@ -5,7 +5,7 @@ typescript.
 
 ---
 
-1. ## [Annotations](./annotations)
+## 1. [Annotations](./annotations)
 
 Annotations contains some typescript way of working with arrays,objects, interfaces, tuples, variables, classes and functions.
 
@@ -17,3 +17,37 @@ Install TypeScript and ts-node globally using
 ### Run any file using:
 
 `ts-node filename.ts`
+
+---
+
+## 2. [FetchJson](./features)
+
+Fetch Json uses **JSONPlaceHolder** api to demostrate typeScript way of working with Api's.
+
+### Set up
+
+`npm install`
+
+`npm install -g typescript ts-node`
+
+Run index.ts using `ts-node index.ts` to call the API.
+
+---
+
+## 3. [Maps](./maps)
+
+Maps demonstrate a modular approch of working with google maps in typeScript by utilizing interfaces and classes.
+
+### Set Up
+
+`npm install && npm run dev`
+
+---
+
+## 4. [Sort](./sort)
+
+Here, I made use of abstract classes to define a contract b/w sorter and any other data structure utilizing sorter.
+
+### Set up
+
+`npm install && npm start`
