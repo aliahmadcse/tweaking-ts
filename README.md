@@ -51,3 +51,11 @@ Here, I made use of abstract classes to define a contract b/w sorter and any oth
 ### Set up
 
 `npm install && npm start`
+
+## 4. [Stats](./stats)
+
+Stats uses a football.csv file to read a chunks of data and then utilizes object oriented potential of typeScript and Generics to perform analysis on that data.
+
+### Set up
+
+`npm install && npm start`
