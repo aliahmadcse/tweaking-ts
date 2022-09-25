@@ -1,32 +1,32 @@
 class Vehicle {
-    constructor(private _color: string) {}
+  constructor(private _color: string) { }
 
-    protected honk(): void {
-        console.log("poop");
-    }
+  protected honk(): void {
+    console.log("poop");
+  }
 
-    public get color(): string {
-        return this._color;
-    }
+  public get color(): string {
+    return this._color;
+  }
 
-    public set color(color: string) {
-        this._color = color;
-    }
+  public set color(color: string) {
+    this._color = color;
+  }
 }
 
 class Car extends Vehicle {
-    constructor(color: string) {
-        super(color);
-    }
+  constructor(color: string) {
+    super(color);
+  }
 
-    private drive(): void {
-        console.log("Room");
-    }
+  private drive(): void {
+    console.log("Room");
+  }
 
-    public startDrivingProcess(): void {
-        this.drive();
-        this.honk();
-    }
+  public startDrivingProcess(): void {
+    this.drive();
+    this.honk();
+  }
 }
 
 const vehicle = new Vehicle("red");
