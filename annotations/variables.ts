@@ -52,3 +52,5 @@ let numberAboveZero: boolean | number = false;
 for (let num of numbers) {
   if (num > 0) numberAboveZero = num;
 }
+
+export {}

@@ -19,3 +19,5 @@ const printVehicle = (vehicle: Vehicle): void => {
 };
 
 printVehicle(oldCivic);
+
+export { };
