@@ -29,6 +29,7 @@ export class CustomMap {
         lng: mappable.location.lng,
       },
     });
+    
     marker.addListener("mouseover", () => {
       const infoWindow = new google.maps.InfoWindow({
         content: mappable.markerContent(),
