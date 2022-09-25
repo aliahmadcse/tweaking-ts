@@ -1,7 +1,7 @@
-import { Sorter } from "./Sorter";
-import { NumbersCollection } from "./NumbersCollection";
-import { CharactersCollection } from "./CharactersCollection";
-import { LinkedList } from "./LinkedList";
+import {Sorter} from "./Sorter";
+import {NumbersCollection} from "./NumbersCollection";
+import {CharactersCollection} from "./CharactersCollection";
+import {LinkedList} from "./LinkedList";
 
 // const numbersCollection = new NumbersCollection([-3, 2, 14, 1]);
 
