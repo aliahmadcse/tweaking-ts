@@ -21,9 +21,9 @@ export class LinkedList extends Sorter {
   add(data: number): void {
     const node = new Node(data);
 
+    this.count++;
     if (!this.head) {
       this.head = node;
-      this.count++;
       return;
     }
 
@@ -33,7 +33,6 @@ export class LinkedList extends Sorter {
     }
 
     tail.next = node;
-    this.count++;
   }
 
   /**

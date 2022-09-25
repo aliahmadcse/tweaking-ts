@@ -6,7 +6,11 @@ import {LinkedList} from "./LinkedList";
 // const numbersCollection = new NumbersCollection([-3, 2, 14, 1]);
 
 // const charactersCollection = new CharactersCollection("saX");
+
 // console.log(charactersCollection.data);
+// charactersCollection.sort();
+// console.log(charactersCollection.data);
+
 
 const linkedList = new LinkedList();
 linkedList.add(3);
