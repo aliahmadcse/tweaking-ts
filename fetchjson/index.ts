@@ -35,5 +35,5 @@ const logTodo = (
     user id: ${userId}
     Todo Id: ${id},
     Title: ${title}
-    and finished:${finished}`);
+    and finished: ${finished}`);
 };
