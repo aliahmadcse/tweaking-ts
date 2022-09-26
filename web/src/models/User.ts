@@ -10,11 +10,11 @@ interface UserProps {
 export class User {
   public events: Eventing = new Eventing();
 
-  public constructor(private data: UserProps) {}
+  public constructor(private data: UserProps) { }
 
   /**
    * get a user prop
-   * @param propname
+   * @param propName - key of the property to get the value of
    */
   public get(propName: string): number | string {
     return this.data[propName];
