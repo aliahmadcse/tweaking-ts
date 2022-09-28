@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "name": "zain",
-      "age": 17
+      "name": "Ali Ahmad",
+      "age": 22
     },
     {
       "name": "ali ahmad",
@@ -14,6 +14,11 @@
       "name": "new record",
       "age": 0,
       "id": 3
+    },
+    {
+      "name": "Ali Ahmad",
+      "age": 22,
+      "id": 4
     }
   ]
 }

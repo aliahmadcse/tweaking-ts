@@ -9,7 +9,6 @@ export class Eventing {
    * @param callback
    */
   public on = (eventName: string, callback: Callback): void => {
-    console.log(this);
     const handlers = this.events[eventName] || [];
     handlers.push(callback);
     this.events[eventName] = handlers;
