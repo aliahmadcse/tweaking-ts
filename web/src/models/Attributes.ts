@@ -6,9 +6,9 @@ export class Attributes<T extends {}> {
    * get a user prop
    * @param propName - key of the property to get the value of
    */
-  public get(propName: string): number | string {
-    return this.data[propName];
-  }
+  public get = <K extends keyof T>(key: K): T[K] => {
+    return this.data[key];
+  };
 
   /**
    * update a user prop
