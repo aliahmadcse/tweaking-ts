@@ -12,7 +12,7 @@ collection.on('change', () => {
 
 
 collection.fetch();
-console.log(collection.model);
+console.log(collection);
 
 
 
