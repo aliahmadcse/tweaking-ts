@@ -1,6 +1,12 @@
 import { User } from "./models/User";
 
-const user = new User({ id: 1, name: "Ali Ahmad", age: 22 });
+const user = User.buildUser({ id: 1, name: "Ali Ahmad", age: 22 });
+
+
+user.set({ name: "Hello" });
+
+console.log(user.get("name"));
+
 
 
 user.on('save', () => {
@@ -8,3 +14,4 @@ user.on('save', () => {
 });
 
 user.save();
+

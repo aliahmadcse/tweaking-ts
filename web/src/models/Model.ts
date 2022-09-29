@@ -37,17 +37,9 @@ export class Model<T extends HasId> {
     private sync: Sync<T>
   ) { }
 
-  public get on() {
-    return this.events.on;
-  }
-
-  public get trigger() {
-    return this.events.trigger;
-  }
-
-  public get get() {
-    return this.attributes.get;
-  }
+  public on = this.events.on;
+  public trigger = this.events.trigger;
+  public get = this.attributes.get;
 
   public set(update: T): void {
     this.attributes.set(update);
