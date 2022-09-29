@@ -1,5 +1,6 @@
+import { ModelAttributes } from './Model';
 
-export class Attributes<T extends {}> {
+export class Attributes<T extends {}> implements ModelAttributes<T> {
   public constructor(private data: T) { }
 
   /**

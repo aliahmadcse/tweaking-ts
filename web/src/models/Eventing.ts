@@ -1,6 +1,6 @@
-type Callback = () => void;
+import { Callback, Events } from './Model';
 
-export class Eventing {
+export class Eventing implements Events {
   private events: { [key: string]: Callback[]; } = {};
 
   /**
