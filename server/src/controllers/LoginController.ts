@@ -5,7 +5,7 @@ interface RequestWithBody extends Request {
   body: { [key: string]: string | undefined; };
 }
 
-@Controller()
+@Controller('/auth')
 class LoginController {
 
   @Get('/login')
@@ -44,5 +44,10 @@ class LoginController {
     }
   };
 
+  @Get('/logout')
+  getLogout(req: Request, res: Response) {
+    req.session = undefined;
+    res.redirect('/');
+  }
 
 }
