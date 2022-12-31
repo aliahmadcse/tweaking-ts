@@ -46,6 +46,7 @@ function Controller(target: typeof Plane) {
   for (let key of Object.getOwnPropertyNames(target.prototype)) {
 
     const secret = Reflect.getMetadata('path', Plane.prototype, key);
+    console.log(Plane.prototype.fly);
     console.log(secret);
   }
 }
