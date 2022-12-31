@@ -61,3 +61,20 @@ Stats uses a football.csv file to read a chunks of data and then utilizes object
 ### Set up
 
 `npm install && npm start`
+
+
+## 6. [Web](./web)]
+
+Provides a framework for managing dom events, data modeling and db operations.
+
+### Set up
+`npm install && npm run dev`
+
+## 7. [Server](./server)
+
+Utilizing express with typescript and using decorators to manage routes, controller etc.
+
+### Set up
+`npm i && npm start`
+
+

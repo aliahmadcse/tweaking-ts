@@ -1,10 +1,8 @@
 import { Request, Response, Router } from 'express';
 
-interface RequestWithBody extends Request {
-  body: { [key: string]: string | undefined; };
-}
 
-function requireAuth(req: Request, res: Response, next: Function): void {
+
+export function requireAuth(req: Request, res: Response, next: Function): void {
   if (req.session && req.session.loggedIn) {
     next();
     return;
@@ -35,17 +33,7 @@ router.get('/', (req, res) => {
 });
 
 
-router.post('/login', (req: RequestWithBody, res: Response) => {
-  const { email, password } = req.body;
-  if (email && password && email === 'hi@hi.com' && password === 'password') {
-    // mark this person as logged in
-    req.session = { loggedIn: true };
-    // redirect them to the root route
-    res.redirect('/');
-  } else {
-    res.send('Invalid email or password');
-  }
-});
+
 
 router.get('/protected', requireAuth, (req: Request, res: Response) => {
   res.send('Welcome to protected route, logged in user');
