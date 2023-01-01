@@ -77,4 +77,11 @@ Utilizing express with typescript and using decorators to manage routes, control
 ### Set up
 `npm i && npm start`
 
+## 8. [React Redux Typescript](./rrts)
+
+Typescript way of working with React && Redux.
+
+### Set up
+`npm i && npm start`
+
 
